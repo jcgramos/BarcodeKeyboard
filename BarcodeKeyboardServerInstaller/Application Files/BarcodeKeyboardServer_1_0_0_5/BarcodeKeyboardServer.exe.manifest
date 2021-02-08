@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BarcodeKeyboardServer.exe" version="1.0.0.5" publicKeyToken="ef1e16a7d741e9fc" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Barcode.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BarcodeKeyboardServer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="BarcodeKeyboardServer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BarcodeKeyboardServer.exe" size="86976">
+      <assemblyIdentity name="BarcodeKeyboardServer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9ZK+q4LWPjKeuoR23guofmBFJg6sT20P5+gjnP8+bTc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\BarcodeKeyboardServer.resources.dll" size="3584">
+      <assemblyIdentity name="BarcodeKeyboardServer.resources" version="1.0.0.0" language="en" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3DiN57H5mq79jN5W1YFemfZ+6k5mSwmEEeSbwJiKB90=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QRCoder.dll" size="121344">
+      <assemblyIdentity name="QRCoder" version="1.3.9.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Rrr06qtdpr8MTOkaoReAPwLk40NElx64q6oeAQFxphg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Barcode.ico" size="12212">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SUVE4gxT6t+KhcHD3Ig1yA30QsX3wQB3BqmjKt2ppLI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="BarcodeKeyboardServer.exe.config" size="1064">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ldbKK+v1srrA0i0zy9eGyyUnJmSWhGOKxbdeFAJ4te4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=JCGRAMOS-PC\root" issuerKeyHash="3d88e091b5246a4696cf0ad19335bcefcd99d939" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>YphM8PDAJF8evdeodpL36TGIewrEHScbNJbhyr4bXLM=</DigestValue></Reference></SignedInfo><SignatureValue>Zu38FAW9I2fMb2FgeLqZWZBClg5X6xjHmySjByQDgTsDSbo8KUPjm0TJe+7+WSyvDMbRSn2QmRUmCo04qceZHP939kV67TF/NyQodBElA7IANTmOiANL/1gLxGXpBY31XyzyColcIcpxnwF/OxJDzC7bRVLhCU3TcUVFZj8DHR4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xtrVHCmM+i3miO/d96pb9KVSJ9aqbD4ZOrAlJ2xdUxphAvBpuOV8XgzwQUqPF2Fcoy5qKVHngfYUW+Dn18V8ZEY69z2jyCFDGBxNz7mjZG0X7mlsXC87MyARM9UdSuThpbyEkSpRrx/vzhV5LO3x5l4buBQ9YS6c3VKHF2L5/dk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b35c1bbecae196341b271dc40a7b8831e9f79276a8d7bd1e5f24c0f0f04c9862" Description="" Url=""><as:assemblyIdentity name="BarcodeKeyboardServer.exe" version="1.0.0.5" publicKeyToken="ef1e16a7d741e9fc" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JCGRAMOS-PC\root</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>A9802l56XIE7Mz9euCxcpw2qecredclz1alImA6LcSk=</DigestValue></Reference></SignedInfo><SignatureValue>nJXfDvK8I530047k6/QGRMQ4iuzdCKRkDdcBxBHtEQQZ1ieBiLO/SDu7YoJBTqivc3DT1aW0T3VlFLO0yXF4vk+uAeWz2rCztlMYDXMOAABQ049NVyVJZH2Eu3A0vz9eJcwsMfYyWWQ9CIECGNYCN4w9v6/HjXVWl7iJ6iC2izI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xtrVHCmM+i3miO/d96pb9KVSJ9aqbD4ZOrAlJ2xdUxphAvBpuOV8XgzwQUqPF2Fcoy5qKVHngfYUW+Dn18V8ZEY69z2jyCFDGBxNz7mjZG0X7mlsXC87MyARM9UdSuThpbyEkSpRrx/vzhV5LO3x5l4buBQ9YS6c3VKHF2L5/dk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQIf/idPj/ob9FuU356tcYrDANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAASgBDAEcAUgBBAE0ATwBTAC0AUABDAFwAcgBvAG8AdDAeFw0yMDEwMDUxMTE4MzFaFw0yMTEwMDUxNzE4MzFaMCsxKTAnBgNVBAMeIABKAEMARwBSAEEATQBPAFMALQBQAEMAXAByAG8AbwB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDG2tUcKYz6LeaI7933qlv0pVIn1qpsPhk6sCUnbF1TGmEC8Gm45XxeDPBBSo8XYVyjLmopUeeB9hRb4OfXxXxkRjr3PaPIIUMYHE3PuaNkbRfuaWxcLzszIBEz1R1K5OGlvISRKlGvH+/OFXks7fHmXhu4FD1hLpzdUocXYvn92QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAFuLHxRIVizhl/TbOTDJBixwhxXXfGYHCKRUa6j5qQNhszJfBv5e3HD0dwq0GWmakEYvmb4Z5ctbciuGldUgHt3xcFClJy9u//Q5BrEb8FBb/5Jd6R/C770mrhz7wM+0g3Xuu+wWh/QkM4Ypzq/y8VekUocrh+V3Tz9l1Q2vfYLG</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

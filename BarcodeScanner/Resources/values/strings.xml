@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Barcode Scanner</string>
+    <string name="app_playstore_url">https://play.google.com/store/apps/details?id=tk.opdf.ALander</string>
+    <string name="menu_share_option">Compartir App</string>
+    <string name="main_pair_button">Emparejar</string>
+    <string name="main_scan_button">Escanear</string>
+    <string name="main_beep_checkbox">Señal acústica</string>
+    <string name="main_volume_label">Volumen</string>
+    <string name="pair_top_text">Para usar BarCodeKeyboard debe iniciar BarCodeKeyboardServer en su ordenador</string>
+    <string name="pair_bottom_text">Siga las instrucciones indicadas en la aplicación del ordenador</string>
+    <string name="scan_top_text">Apunte al código de barras que desea transferir al ordenador</string>
+    <string name="scan_bottom_text">Puede modificar el comportamiento en la aplicación del ordenador</string>
+</resources>
